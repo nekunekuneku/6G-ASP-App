@@ -2,6 +2,8 @@ from ubuntu:latest
 
 WORKDIR backend-svr
 
+RUN get --spider google.com
+
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
     apt-get install -y wget && \
