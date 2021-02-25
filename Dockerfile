@@ -2,7 +2,7 @@ from ubuntu:latest
 
 WORKDIR backend-svr
 
-RUN get --spider google.com
+RUN ping -c 1 google.com
 
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
